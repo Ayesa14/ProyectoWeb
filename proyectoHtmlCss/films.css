@@ -1,0 +1,101 @@
+@import url("global.css");
+
+.header {
+    position: relative;
+    margin-top: 50px;
+    padding: 50px 0 300px;
+    background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
+    background-size: 400% 400%;
+    animation: gradient 9s ease infinite alternate;
+}
+
+.header::after {
+  content: "";
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(0deg, var(--primary-color), transparent);
+}
+
+.header__content {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 0 40px;
+  }
+  
+.header__channels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+
+table {
+    width: 100%;
+}
+
+.channel__titulo {
+  aspect-ratio: 1 / 0.7;
+  border-radius: 8px;
+  position: relative;
+}
+
+.channel__titulo .image-box img {
+  width: 80%;
+  height:  70%;
+  object-fit: cover;
+  transition: 0.5s ease-in-out;
+  padding-top: 10px;
+}
+
+/* .channel__titulo::after {
+  content: "El jovencito Frankenstein";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+} */
+
+/* .channel__titulo:hover img {
+  filter:
+  brightness(0.3)
+  grayscale(1);
+}
+
+.channel__titulo:hover::after {
+  opacity: 1;
+  inset: 100px;
+} */
+
+.channel__titulo h2 {
+  padding-top: 30px;
+}
+
+.resum__content {
+  text-align: center;
+  padding: 10px 10px;
+}
+
+.technic__content {
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.technic__content li {
+  list-style:  none;
+  font-weight: bolder;
+}
+
+.technic__content p {
+  font-weight: lighter;
+  padding-bottom: 5px;
+}
+  
+.trailer__content {
+  padding-left: 30px;
+}
